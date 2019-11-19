@@ -40,6 +40,7 @@
     "typescript": "3.5.3"
   },
   "scripts": {
+    "setpath":"set NODE_PATH=./src",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",
