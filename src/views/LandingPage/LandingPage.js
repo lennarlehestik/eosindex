@@ -18,6 +18,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import BarChart from './charts/BarChart';
+import SectionPills from './other/SectionPills';
 
 const dashboardRoutes = [];
 
@@ -66,9 +67,19 @@ export default function LandingPage(props) {
           </GridContainer>
         </div>
       </Parallax>
+
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
+        <div style={{"height":"30px"}}></div>
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={8} lg={6}>
           <BarChart />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={12} lg={6}>
+          <SectionPills />
+          </GridItem>
+          </GridContainer>
+          <div style={{"height":"30px"}}></div>
         </div>
       </div>
       <Footer />
