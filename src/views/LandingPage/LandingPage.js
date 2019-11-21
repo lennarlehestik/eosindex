@@ -19,6 +19,8 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import BarChart from './charts/BarChart';
 import SectionPills from './other/SectionPills';
+import MyComponent from './other/BlockSense';
+
 
 const dashboardRoutes = [];
 

@@ -7,6 +7,7 @@ import Dashboard from "@material-ui/icons/WorkOutline";
 import Schedule from "@material-ui/icons/AccountBalance";
 import List from "@material-ui/icons/List";
 import Modal from './Modal';
+import ModalBack from './ModalBack';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -57,6 +58,7 @@ export default function SectionPills() {
                         </small>
                         <br />
                         <Modal />
+                        <ModalBack />
                       </span>
                     )
                   }

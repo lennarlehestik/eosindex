@@ -15,6 +15,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Popover from "@material-ui/core/Popover";
 // @material-ui/icons
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
+import Cached from "@material-ui/icons/Cached";
 import Close from "@material-ui/icons/Close";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -22,7 +23,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.js";
 
-import SliderExampleStep from './Calculator';
+import SliderExampleStepBack from './CalculatorBack';
 
 const useStyles = makeStyles(styles);
 
@@ -32,7 +33,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 Transition.displayName = "Transition";
 
-export default function Modal() {
+export default function ModalBack() {
   const classes = useStyles();
   const [anchorElLeft, setAnchorElLeft] = React.useState(null);
   const [anchorElTop, setAnchorElTop] = React.useState(null);
@@ -41,14 +42,17 @@ export default function Modal() {
   const [classicModal, setClassicModal] = React.useState(false);
   return (
               <div>
-                <Button
-                style={{"display":"inline"}}
-                  color="primary"
+
+
+              <Button
+              style={{"display":"inline"}}
+                  color="warning"
                   onClick={() => setClassicModal(true)}
                 >
-                  <LibraryBooks className={classes.icon} />
-                  Make EosETF
+                  <Cached className={classes.icon} />
+                  Refund EosETF
                 </Button>
+
                 <Dialog
                   classes={{
                     root: classes.center,
@@ -75,26 +79,26 @@ export default function Modal() {
                     >
                       <Close className={classes.modalClose} />
                     </IconButton>
-                    <h4 className={classes.modalTitle}>Calculator</h4>
+                    <h4 className={classes.modalTitle}>Refund Calculator</h4>
                   </DialogTitle>
                   <DialogContent
                     id="classic-modal-slide-description"
                     className={classes.modalBody}
                   >
                     <p>
-                      First choose how much EosETF you want to make. The calculator
-                      will show you how much of each token you need to transfer
-                      in order to make your chosen amount of EosETF.
+                      You can refund your EosETF tokens and have the tokens from
+                      the portfolio returned to you for a fee of 0.5%. This calculator
+                      shows the tokens to be returned.
                     </p>
                     <div style={{"height":"40px"}}></div>
 
-                    <SliderExampleStep />
+                    <SliderExampleStepBack />
 
                   </DialogContent>
 
                   <DialogActions className={classes.modalFooter}>
-                    <Button color="primary">
-                      Transfer
+                    <Button color="warning">
+                      Refund
                     </Button>
                     <Button
                       onClick={() => setClassicModal(false)}

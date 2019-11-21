@@ -1,0 +1,43 @@
+Folder PATH listing
+Volume serial number is 146D-1CE2
+C:.
++---assets
+|   +---css
+|   +---img
+|   +---jss
+|   |   \---material-kit-react
+|   |       +---components
+|   |       \---views
+|   |           +---componentsSections
+|   |           \---landingPageSections
+|   \---scss
+|       +---core
+|       |   +---mixins
+|       |   \---variables
+|       \---plugins
++---components
+|   +---Badge
+|   +---Card
+|   +---Clearfix
+|   +---CustomButtons
+|   +---CustomDropdown
+|   +---CustomInput
+|   +---CustomLinearProgress
+|   +---CustomTabs
+|   +---Footer
+|   +---Grid
+|   +---Header
+|   +---InfoArea
+|   +---NavPills
+|   +---Pagination
+|   +---Parallax
+|   +---Snackbar
+|   \---Typography
+\---views
+    +---About
+    |   +---assets
+    |   \---other
+    \---LandingPage
+        +---assets
+        +---charts
+        \---other
