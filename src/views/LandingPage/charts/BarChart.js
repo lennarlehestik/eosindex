@@ -4,12 +4,12 @@ import { Bar } from 'react-chartjs-2';
 class BarChart extends Component {
   render() {
 		const data = {
-  labels: ["NUT", "WAL", "VTX", "LC", "PTI","COMC","IQ","OWN","MTS", "DAPP", "SENSE","BG","PLO","MEETONE","Others"],
+  labels: ["PEOS", "LIQUIDAPP", "VIGOR", "EDNA", "IQ"],
   datasets: [
     {
-			label: "Holdings (dollars)",
-			backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","gray"],
-			data: [11000,9000,7500,6000,5000,4500,3000,1000,500,400, 300, 200, 100, 100, 5000]
+			label: "Portfolio allocation ($)",
+			backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+			data: [2.9148,1.785,1.76,5.9024,0.1856,0]
     }
   ]
 };

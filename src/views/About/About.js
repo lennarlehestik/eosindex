@@ -17,8 +17,6 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-import BarChart from './charts/BarChart';
-import SectionPills from './other/SectionPills';
 
 const dashboardRoutes = [];
 
@@ -45,24 +43,11 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Own every dApp on EOS through one token.</h1>
+              <h1 className={classes.title}>Read more about EosETF.</h1>
               <h4>
-                EOS is full of amazing dApps, many of which will soon take over
-                the world. Investing in every one of them is practically impossible.
-                Acquire EosETF and
-                rule the rest of EOS.
+                How does it work? Who's behind it?
               </h4>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button>
             </GridItem>
           </GridContainer>
         </div>
@@ -71,18 +56,11 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
         <div style={{"height":"30px"}}></div>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={8} lg={6}>
-          <BarChart />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={12} lg={6}>
-          <SectionPills />
-          </GridItem>
-          </GridContainer>
+        <small>Hello Darkness.</small>
           <div style={{"height":"30px"}}></div>
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 }

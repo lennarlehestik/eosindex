@@ -33,20 +33,20 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href=""
+                href="/About"
                 className={classes.block}
                 target="_blank"
               >
-                Check out link 1
+                Read about EosETF
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href=""
+                href="https://liquidapps.io/"
                 className={classes.block}
                 target="_blank"
               >
-                Check out link 2
+                Visit LiquidApps
               </a>
             </ListItem>
           </List>
@@ -55,7 +55,7 @@ export default function Footer(props) {
           <a
           href=""
           >
-            EosIndex
+            EosETF
           </a>{" "}
           for smart investing.
         </div>

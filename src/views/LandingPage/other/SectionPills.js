@@ -6,12 +6,11 @@ import Button from './Button.js';
 import Dashboard from "@material-ui/icons/WorkOutline";
 import Schedule from "@material-ui/icons/AccountBalance";
 import List from "@material-ui/icons/List";
-
+import Modal from './Modal';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
-
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -23,7 +22,7 @@ export default function SectionPills() {
                 color="primary"
                 tabs={[
                   {
-                    tabButton: "Buy EosIndex",
+                    tabButton: "Buy EosETF",
                     tabIcon: Dashboard,
                     tabContent: (
                       <span>
@@ -40,12 +39,12 @@ export default function SectionPills() {
                           Click and blah blah.
                         </small>
                         <br />
-                        <Button type="button" color="info">Get EosIndex</Button>
+                        <Button type="button" color="info">Get EosETF</Button>
                       </span>
                     )
                   },
                   {
-                    tabButton: "Make EosIndex",
+                    tabButton: "Make EosETF",
                     tabIcon: Schedule,
                     tabContent: (
                       <span>
@@ -57,7 +56,7 @@ export default function SectionPills() {
                           You can create a fund and sell it.
                         </small>
                         <br />
-                        <Button type="button" color="info">Make Fund</Button>
+                        <Modal />
                       </span>
                     )
                   }
