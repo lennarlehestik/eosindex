@@ -50,14 +50,16 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Tooltip title="Coming soon!">
         <Button
           href=""
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Whitepaper
+          <CloudDownload className={classes.icons} /> DAC Constitution
         </Button>
+        </Tooltip>
       </ListItem>
     </List>
   );

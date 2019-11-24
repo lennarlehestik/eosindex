@@ -8,7 +8,6 @@ import 'rc-slider/assets/index.css';
 
 export default class SliderExampleStep extends React.Component {
   state = { sliderValues: [1] };
-
   handleChange = sliderValues => {
     this.setState({ sliderValues });
   };

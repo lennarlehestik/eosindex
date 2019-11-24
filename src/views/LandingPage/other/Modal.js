@@ -21,11 +21,8 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.js";
-
 import SliderExampleStep from './Calculator';
-
 const useStyles = makeStyles(styles);
-
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
@@ -39,6 +36,7 @@ export default function Modal() {
   const [anchorElBottom, setAnchorElBottom] = React.useState(null);
   const [anchorElRight, setAnchorElRight] = React.useState(null);
   const [classicModal, setClassicModal] = React.useState(false);
+  const state = { message: "" }
   return (
               <div>
                 <Button
