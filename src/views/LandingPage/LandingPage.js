@@ -82,11 +82,11 @@ export default function LandingPage() {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="EosETF"
+        brand="EOSETF"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 100,
           color: "white"
         }}
        // {...rest}
@@ -95,12 +95,11 @@ export default function LandingPage() {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Own every dApp on EOS through one token.</h1>
+              <h1 className={classes.title}>First decentralized Token ETF</h1>
               <h4>
-                EOS is full of amazing dApps, many of which will soon take over
-                the world. Investing in every one of them is practically impossible.
-                Acquire EosETF and
-                rule the rest of EOS.
+              Diversify your portfolio by buying one token that exposes you to the whole EOS market. </h4> <h4>Automatic rebalancing of the portfolio by utilizing LiquidOracles.</h4><h4>
+Anybody with eosio account can become Authorized Participants (APs)
+and participate in Creation and Redemption of the ETF.
               </h4>
               <br />
               <Button

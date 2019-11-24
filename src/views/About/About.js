@@ -30,11 +30,11 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="EosETF"
+        brand="EOSETF"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 100,
           color: "white"
         }}
         {...rest}
@@ -43,9 +43,9 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Read more about EosETF.</h1>
+              <h1 className={classes.title}>Read more about EOSETF.</h1>
               <h4>
-                How does it work? Who's behind it?
+                How does it work? Can I try?
               </h4>
               <br />
             </GridItem>
@@ -56,7 +56,20 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
         <div style={{"height":"30px"}}></div>
-        <small>Hello Darkness.</small>
+        <h3 style={{"color":"black"}}>
+        Interact with the dApp by logging in with the eosetftestac account and setting up the network in Scatter.</h3> <br></br>
+<p style={{"color":"black"}}>
+        "active":<br></br>
+        "privateKey":"5JwuyP4MmLnp1HSrgbkPm5FcKVbkD5tX8Ea9zNAgmV3ENo68dif"<br></br>
+        "publicKey":"EOS4yhvurw2TGvwLZcdYESbHPmbCfnMWjGqE6wn37RiV1wczHXp5x"<br></br>
+<div style={{"height":"40px"}}></div>
+
+              blockchain:'eos',<br></br>
+              chainId:'5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191',<br></br>
+              host:'api.kylin.alohaeos.com',<br></br>
+              port:443,<br></br>
+              protocol:'https'<br></br>
+        </p>
           <div style={{"height":"30px"}}></div>
         </div>
       </div>

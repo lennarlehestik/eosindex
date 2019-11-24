@@ -442,7 +442,7 @@ function transferedna() {
                   onClick={() => setClassicModal(true)}
                 >
                   <LibraryBooks className={classes.icon} />
-                  Refund EosETF
+                  Redeem EOSETF
                 </Button>
                 <Dialog
                   classes={{
@@ -470,15 +470,16 @@ function transferedna() {
                     >
                       <Close className={classes.modalClose} />
                     </IconButton>
-                    <h4 className={classes.modalTitle}>Calculator</h4>
+                    <h4 className={classes.modalTitle}>Redemption</h4>
                   </DialogTitle>
                   <DialogContent
                     id="classic-modal-slide-description"
                     className={classes.modalBody}
                   >
                     <p>
-                      You can get your tokens refunded for a fee of 0.5%. blahblahblah
-                      blahblahblah blahblahblah.
+                    Choose how many EOSETFs would you like to redeem by adjusting the slider.
+0.5% of the token values during the redemption are transferred to EOSETF DAC
+which is under multisig of custodians elected by the holders of the EOSETF token.
                     </p>
                     <div style={{"height":"40px"}}></div>
 

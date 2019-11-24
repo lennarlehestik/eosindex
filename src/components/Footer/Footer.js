@@ -55,9 +55,9 @@ export default function Footer(props) {
           <a
           href=""
           >
-            EosETF
+            Active investment
           </a>{" "}
-          for smart investing.
+          with EOSETF.
         </div>
       </div>
     </footer>

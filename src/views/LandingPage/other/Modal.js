@@ -90,7 +90,7 @@ Transition.displayName = "Transition";
                   onClick={() => setClassicModal(true)}
                 >
                   <LibraryBooks className={classes.icon} />
-                  Make EosETF
+                  Create EOSETF
                 </Button>
                 <Dialog
                   classes={{

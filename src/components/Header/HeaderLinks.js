@@ -51,12 +51,12 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href=""
+          href="https://members.eosdac.io"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> EOSETF DAC
+          EOSETF DAC
         </Button>
       </ListItem>
     </List>

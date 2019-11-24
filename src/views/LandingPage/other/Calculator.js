@@ -606,60 +606,47 @@ this.lita();
 
     return (
       <div>
-
+<p>You are creating <b>{sliderValues[0]} EosETF</b> tokens.</p>
         <Range
           min={1}
           max={50}
           onChange={this.handleChange}
           defaultValue={sliderValues}
         />
-        <div style={{"padding-top":"15px"}}>
-        You are making <b>{sliderValues[0]} EosETF</b> tokens.
-        <br></br>
-        You need to transfer:
-        <br></br>
-        {sliderValues[0]*40000} PEOS tokens. (You have: {(peozbalance)}.)
-        <br></br>
-        {sliderValues[0]*200} LIQUIDAPP tokens. (You have: {(dabbbalance)}.)
-        <br></br>
-        {sliderValues[0]*1000} VIGOR tokens. (You have:  {(vikbalance)}.)
-        <br></br>
-        {sliderValues[0]*1000} EDNA tokens. (You have: {(etnabalance)}.)
-        <br></br>
-        {sliderValues[0]*100} IQ tokens. (You have: {(ikqbalance)}.)
-        </div>
-        <br></br>
-        <Button
-                      onClick={() => this.transferedna() }
-                      color="primary"
-                    >
-                      edna
-                    </Button>
-                    <Button
-                      onClick={() => this.transferdapp() }
+<div style={{"height":"30px"}}></div>
+<table>
+ <tr>
+   <th style={{"width":"200px"}}>You need to transfer:</th>
+   <th style={{"width":"200px"}}>Your balance:</th>
+   <th>Transfer:</th>
+ </tr>
+ <tr>
+   <td>{sliderValues[0]*40000} PEOS</td>
+   <td>{(peozbalance)} PEOS</td>
+   <td><Button onClick={() => this.transferpeos() } color="primary" style={{"width":"50px"}}> PEOS </Button></td>
+ </tr>
+ <tr>
+   <td>{sliderValues[0]*200} DAPP</td>
+   <td>{(dabbbalance)} DAPP</td>
+   <td><Button onClick={() => this.transferdapp() } color="primary" style={{"width":"50px"}}> DAPP </Button></td>
+ </tr>
+ <tr>
+   <td>{sliderValues[0]*1000} VIG</td>
+   <td>{(vikbalance)} VIG</td>
+   <td><Button onClick={() => this.transfervig() } color="primary" style={{"width":"50px"}}> VIG </Button></td>
+ </tr>
+ <tr>
+   <td>{sliderValues[0]*1000} EDNA</td>
+   <td>{(etnabalance)} EDNA</td>
+   <td><Button onClick={() => this.transferedna() } color="primary" style={{"width":"50px"}}> EDNA </Button></td>
+ </tr>
+ <tr>
+   <td>{sliderValues[0]*100} IQ</td>
+   <td>{(ikqbalance)} IQ</td>
+   <td><Button onClick={() => this.transferiq() } color="primary" style={{"width":"50px"}}> IQ </Button></td>
+ </tr>
+</table>
 
-                      color="primary"
-                    >
-                      dapp
-                    </Button>
-                    <Button
-                      onClick={() => this.transferiq() }
-                      color="primary"
-                    >
-                      iq
-                    </Button>
-                    <Button
-                      onClick={() => this.transferpeos() }
-                      color="primary"
-                    >
-                      peos
-                    </Button>
-                    <Button
-                      onClick={() => this.transfervig() }
-                      color="primary"
-                    >
-                      vig
-                    </Button>
       </div>
 
     );

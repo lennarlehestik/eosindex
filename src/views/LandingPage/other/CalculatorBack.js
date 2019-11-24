@@ -132,7 +132,7 @@ import { ApiService } from '../../services';
         <div style={{"padding-top":"15px"}}>
         You are refunding <b>{sliderValues[0]} EosETF</b> tokens.
         <br></br>
-        You will be refunded:
+        <b>You will be refunded:</b>
         <br></br>
         {sliderValues[0]*400*0.995} PEOS tokens.
         <br></br>
