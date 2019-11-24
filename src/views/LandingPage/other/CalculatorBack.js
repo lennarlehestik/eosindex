@@ -130,26 +130,26 @@ import { ApiService } from '../../services';
           defaultValue={sliderValues}
         />
         <div style={{"padding-top":"15px"}}>
-        You are refunding <b>{sliderValues[0]} EosETF</b> tokens.
+        You are redeeming <b>{sliderValues[0]} EOSETF</b> tokens.
         <br></br>
         <b>You will be refunded:</b>
         <br></br>
-        {sliderValues[0]*400*0.995} PEOS tokens.
+        {sliderValues[0]*400*0.995} PEOS
         <br></br>
-        {sliderValues[0]*200*0.995} LIQUIDAPP tokens.
+        {sliderValues[0]*200*0.995} DAPP
         <br></br>
-        {sliderValues[0]*1000*0.995} VIGOR tokens.
+        {sliderValues[0]*1000*0.995} VIG
         <br></br>
-        {sliderValues[0]*1000*0.995} EDNA tokens.
+        {sliderValues[0]*1000*0.995} EDNA
         <br></br>
-        {sliderValues[0]*100*0.995} IQ tokens.
+        {sliderValues[0]*100*0.995} IQ
         </div>
         <br></br>
         <Button
                       onClick={() => this.transferetf() }
                       color="danger"
                     >
-                      Redemption
+                      Redeem
                     </Button>
       </div>
     );

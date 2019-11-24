@@ -118,16 +118,14 @@ Transition.displayName = "Transition";
                     >
                       <Close className={classes.modalClose} />
                     </IconButton>
-                    <h4 className={classes.modalTitle}>Calculator</h4>
+                    <h4 className={classes.modalTitle}>Creation</h4>
                   </DialogTitle>
                   <DialogContent
                     id="classic-modal-slide-description"
                     className={classes.modalBody}
                   >
                     <p>
-                      First choose how much EosETF you want to make. The calculator
-                      will show you how much of each token you need to transfer
-                      in order to make your chosen amount of EosETF.
+                      Choose how many EOSETFs would you like to create by adjusting the slider. Make sure your digital wallet is connected to proceed with transferring. If the amounts you have sent do not match the provided portfolio allocation all your tokens will be sent back to you automatically.
                     </p>
                     <div style={{"height":"40px"}}></div>
 

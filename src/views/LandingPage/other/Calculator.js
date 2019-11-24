@@ -606,7 +606,7 @@ this.lita();
 
     return (
       <div>
-<p>You are creating <b>{sliderValues[0]} EosETF</b> tokens.</p>
+<p>You are creating <b>{sliderValues[0]} EOSETF</b> tokens.</p>
         <Range
           min={1}
           max={50}
