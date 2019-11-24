@@ -621,7 +621,7 @@ this.lita();
    <th>Transfer:</th>
  </tr>
  <tr>
-   <td>{sliderValues[0]*40000} PEOS</td>
+   <td>{sliderValues[0]*400} PEOS</td>
    <td>{(peozbalance)} PEOS</td>
    <td><Button onClick={() => this.transferpeos() } color="primary" style={{"width":"50px"}}> PEOS </Button></td>
  </tr>
