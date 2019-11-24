@@ -1,4 +1,3 @@
-import React from "react";
 // react plugin for creating date-time-picker
 import Datetime from "react-datetime";
 // @material-ui/core components
@@ -21,26 +20,72 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.js";
+
 import SliderExampleStep from './Calculator';
+
+
+import { connect } from 'react-redux';
+import { UserAction } from '../../actions';
+import { ApiService } from '../../services';
+import React, { Component } from 'react';
+
+
+import ScatterJS from '@scatterjs/core';
+import ScatterEOS from '@scatterjs/eosjs2';
+
+import {JsonRpc} from 'eosjs/dist/eosjs-jsonrpc';
+import { Api} from 'eosjs/dist/eosjs-api';
+
+
+
+
+
+
+
+
 const useStyles = makeStyles(styles);
+
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
 
 Transition.displayName = "Transition";
 
-export default function Modal() {
+//export default function Modal() {
+  //this.transfer = this.transfer.bind(this);
+
+  //const [classicModal, setClassicModal] = React.useState(false);
+
+
+
+
+
+
+
+
+
+
+  export default function Modal() {
+
+    //this.transfer = this.transfer.bind(this);
+
+   // connect(mapStateToProps, mapDispatchToProps)
+
+      //this.transfer = this.transfer.bind(this);
+
+
+
+
+
   const classes = useStyles();
   const [anchorElLeft, setAnchorElLeft] = React.useState(null);
   const [anchorElTop, setAnchorElTop] = React.useState(null);
   const [anchorElBottom, setAnchorElBottom] = React.useState(null);
   const [anchorElRight, setAnchorElRight] = React.useState(null);
   const [classicModal, setClassicModal] = React.useState(false);
-  const state = { message: "" }
   return (
               <div>
                 <Button
-                style={{"display":"inline"}}
                   color="primary"
                   onClick={() => setClassicModal(true)}
                 >
@@ -91,19 +136,11 @@ export default function Modal() {
                   </DialogContent>
 
                   <DialogActions className={classes.modalFooter}>
-                    <Button color="primary">
-                      Transfer
-                    </Button>
-                    <Button
-                      onClick={() => setClassicModal(false)}
-                      color="danger"
-                      simple
-                    >
-                      Close
-                    </Button>
+
                   </DialogActions>
                 </Dialog>
               </div>
 
   );
-}
+
+                }

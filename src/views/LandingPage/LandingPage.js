@@ -1,4 +1,3 @@
-import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -18,17 +17,66 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import BarChart from './charts/BarChart';
-import SectionPills from './other/SectionPills';
-import MyComponent from './other/BlockSense';
+import SectionPills from './other/SectionPills.js';
 
 
-const dashboardRoutes = [];
+import ScatterJS from '@scatterjs/core';
+import ScatterEOS from '@scatterjs/eosjs2';
+
+import {JsonRpc} from 'eosjs/dist/eosjs-jsonrpc';
+import { Api} from 'eosjs/dist/eosjs-api';
+
+import { UserAction } from '../actions';
+import { connect } from 'react-redux';
+
+import React, { Component } from 'react';
+
+//import { UserAction } from '../actions';
+
+
+
+
+
+    //this.transfer = this.transfer.bind(this);
+    
+//export default function LandingPage(props) {
+
+
+
+
+  
+  
+ // class LandingPage extends Component {
+
+    //constructor(props) {
+     // super(props);
+//const dashboardRoutes = [];
+
+//const useStyles = makeStyles(styles);
+  //  }
+
+    //render() {
+      const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
+export default function LandingPage() {
+   
 
-export default function LandingPage(props) {
+  const mapStateToProps = state => state;
+
+  const mapDispatchToProps = {
+    setUser: UserAction.setUser,
+  }
+  connect(mapStateToProps, mapDispatchToProps)  
+  
+    
+
+
+
+
+
   const classes = useStyles();
-  const { ...rest } = props;
+  //const { ...rest } = props;
   return (
     <div>
       <Header
@@ -38,10 +86,10 @@ export default function LandingPage(props) {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 50,
+          height: 400,
           color: "white"
         }}
-        {...rest}
+       // {...rest}
       />
       <Parallax filter image={require("assets/img/landing-bg.jpg")}>
         <div className={classes.container}>
@@ -87,4 +135,18 @@ export default function LandingPage(props) {
       <Footer />
     </div>
   );
+
+  
+      }
+
+const mapStateToProps = state => state;
+
+const mapDispatchToProps = {
+  setUser: UserAction.setUser,
 }
+ connect(mapStateToProps, mapDispatchToProps);
+
+// export a Redux-connected React component
+//export default connect(mapStateToProps, mapDispatchToProps);
+
+//export default lHome;

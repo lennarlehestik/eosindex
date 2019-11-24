@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Button from './Button.js';
@@ -14,9 +14,30 @@ import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
 
+import { connect } from 'react-redux';
+import { UserAction } from '../../actions';
+import { ApiService } from '../../services';
+
+
+
+import ScatterJS from '@scatterjs/core';
+import ScatterEOS from '@scatterjs/eosjs2';
+
+import {JsonRpc} from 'eosjs/dist/eosjs-jsonrpc';
+import { Api} from 'eosjs/dist/eosjs-api';
+
+
+
+
+
+
+
 const useStyles = makeStyles(styles);
 
 export default function SectionPills() {
+
+  connect(mapStateToProps, mapDispatchToProps);
+
   const classes = useStyles();
   return (
               <NavPills
@@ -67,3 +88,15 @@ export default function SectionPills() {
 
   );
 }
+
+
+
+const mapStateToProps = state => state;
+
+const mapDispatchToProps = {
+  setUser: UserAction.setUser,
+}
+
+// export a Redux-connected React component
+//export default connect(mapStateToProps, mapDispatchToProps)
+//;
