@@ -56,7 +56,7 @@ export default function HeaderLinks(props) {
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Whitepaper
+          <CloudDownload className={classes.icons} /> EOSETF DAC
         </Button>
       </ListItem>
     </List>

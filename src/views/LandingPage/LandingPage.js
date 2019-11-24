@@ -38,14 +38,14 @@ import React, { Component } from 'react';
 
 
     //this.transfer = this.transfer.bind(this);
-    
+
 //export default function LandingPage(props) {
 
 
 
 
-  
-  
+
+
  // class LandingPage extends Component {
 
     //constructor(props) {
@@ -60,16 +60,16 @@ import React, { Component } from 'react';
 
 const useStyles = makeStyles(styles);
 export default function LandingPage() {
-   
+
 
   const mapStateToProps = state => state;
 
   const mapDispatchToProps = {
     setUser: UserAction.setUser,
   }
-  connect(mapStateToProps, mapDispatchToProps)  
-  
-    
+  connect(mapStateToProps, mapDispatchToProps)
+
+
 
 
 
@@ -106,12 +106,12 @@ export default function LandingPage() {
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.investopedia.com/terms/e/etf.asp"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-play" />
-                Watch video
+                Read about ETFs
               </Button>
             </GridItem>
           </GridContainer>
@@ -136,7 +136,7 @@ export default function LandingPage() {
     </div>
   );
 
-  
+
       }
 
 const mapStateToProps = state => state;

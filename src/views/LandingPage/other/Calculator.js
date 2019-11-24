@@ -618,7 +618,7 @@ this.lita();
         <br></br>
         You need to transfer:
         <br></br>
-        {sliderValues[0]*40000} PEOS tokens. <small id="peos" style={{"color":"black"}}>(You have: {(peozbalance)}.)</small>
+        {sliderValues[0]*40000} PEOS tokens. (You have: {(peozbalance)}.)
         <br></br>
         {sliderValues[0]*200} LIQUIDAPP tokens. (You have: {(dabbbalance)}.)
         <br></br>
@@ -628,7 +628,6 @@ this.lita();
         <br></br>
         {sliderValues[0]*100} IQ tokens. (You have: {(ikqbalance)}.)
         </div>
-        {(name)}{(etfbalance)}, {(peozbalance)}, {(ikqbalance)}, {(etnabalance)}, {(vikbalance)}, {(dabbbalance)}
         <br></br>
         <Button
                       onClick={() => this.transferedna() }

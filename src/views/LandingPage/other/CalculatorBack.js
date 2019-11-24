@@ -144,7 +144,6 @@ import { ApiService } from '../../services';
         <br></br>
         {sliderValues[0]*100*0.995} IQ tokens.
         </div>
-        {(name)}{(etfbalance)}, {(peozbalance)}, {(ikqbalance)}, {(etnabalance)}, {(vikbalance)}, {(dabbbalance)}
         <br></br>
         <Button
                       onClick={() => this.transferetf() }
